@@ -2,6 +2,7 @@
   "name": "eyesome-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ThanhNg224.github.io/eyesome-react",
   "dependencies": {
     "axios": "^1.4.0",
     "dayjs": "^1.11.7",
@@ -21,7 +22,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +44,7 @@
   },
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1",
+    "gh-pages": "^6.3.0",
     "react-scripts": "5.0.1",
     "tailwindcss": "^3.3.2"
   }

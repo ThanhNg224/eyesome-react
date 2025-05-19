@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client"; // 👈 dùng createRoot thay vì ReactDOM.render
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import "./index.css";
 
 import App from "./App";
