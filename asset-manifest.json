@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3f39896f.css",
-    "main.js": "/static/js/main.8d4a84c5.js",
+    "main.js": "/static/js/main.ba145a12.js",
     "static/media/sportsmod1.jpg": "/static/media/sportsmod1.79195fd1fb60315f1319.jpg",
     "static/media/visionmod1.jpg": "/static/media/visionmod1.88377288a7084c28c6b4.jpg",
     "static/media/sunmod1.jpg": "/static/media/sunmod1.94aaa655aab1fdc25a96.jpg",
@@ -44,10 +44,10 @@
     "static/media/spinning-circles.svg": "/static/media/spinning-circles.4beb16fefd30580869ff5d7feb7a52ce.svg",
     "index.html": "/index.html",
     "main.3f39896f.css.map": "/static/css/main.3f39896f.css.map",
-    "main.8d4a84c5.js.map": "/static/js/main.8d4a84c5.js.map"
+    "main.ba145a12.js.map": "/static/js/main.ba145a12.js.map"
   },
   "entrypoints": [
     "static/css/main.3f39896f.css",
-    "static/js/main.8d4a84c5.js"
+    "static/js/main.ba145a12.js"
   ]
 }
