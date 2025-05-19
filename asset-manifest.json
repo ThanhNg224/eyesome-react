@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/eyesome-react/static/css/main.709325db.css",
-    "main.js": "/eyesome-react/static/js/main.0d8722cf.js",
-    "static/media/sportsmod1.jpg": "/eyesome-react/static/media/sportsmod1.79195fd1fb60315f1319.jpg",
-    "static/media/visionmod1.jpg": "/eyesome-react/static/media/visionmod1.88377288a7084c28c6b4.jpg",
-    "static/media/sunmod1.jpg": "/eyesome-react/static/media/sunmod1.94aaa655aab1fdc25a96.jpg",
+    "main.js": "/eyesome-react/static/js/main.a26e0c04.js",
+    "static/media/sportsmod1.jpg": "/eyesome-react/static/media/sportsmod1.0f26b93c34df18345b97.jpg",
+    "static/media/visionmod1.jpg": "/eyesome-react/static/media/visionmod1.496c170728a2dc458ea5.jpg",
+    "static/media/sunmod1.jpg": "/eyesome-react/static/media/sunmod1.da9cb77f7c82c5f2d242.jpg",
     "static/media/success-order.gif": "/eyesome-react/static/media/success-order.b29f5f45859966c00add.gif",
     "static/media/bannerImg.png": "/eyesome-react/static/media/bannerImg.712fc34e6a2084115f10.png",
     "static/media/bannerHero.jpg": "/eyesome-react/static/media/bannerHero.b913ee7a0754b4966295.jpg",
@@ -44,10 +44,10 @@
     "static/media/spinning-circles.svg": "/eyesome-react/static/media/spinning-circles.4beb16fefd30580869ff5d7feb7a52ce.svg",
     "index.html": "/eyesome-react/index.html",
     "main.709325db.css.map": "/eyesome-react/static/css/main.709325db.css.map",
-    "main.0d8722cf.js.map": "/eyesome-react/static/js/main.0d8722cf.js.map"
+    "main.a26e0c04.js.map": "/eyesome-react/static/js/main.a26e0c04.js.map"
   },
   "entrypoints": [
     "static/css/main.709325db.css",
-    "static/js/main.0d8722cf.js"
+    "static/js/main.a26e0c04.js"
   ]
 }
