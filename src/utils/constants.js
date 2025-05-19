@@ -1,4 +1,4 @@
-export const checkboxCategories = ["vision", "sunglasses", "sports"];
+export const checkboxCategories = ["Kính thuốc", "Kính râm", "Kính thể thao"];
 
 export const gendersList = ["all", "men", "women", "unisex"];
 

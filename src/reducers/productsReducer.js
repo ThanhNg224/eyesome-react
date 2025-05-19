@@ -15,13 +15,14 @@ export const initialState = {
   },
   addressList: [
     {
-      id: "61bf1558-94c3-4494-a522-0aad46ed5334",
-      fullname: "Jeon Jungkook",
-      mobile: "0637291830",
-      flat: "42, Yongsan Trade Center, Yongsan ",
-      area: "Hangang-daero",
-      city: "Seoul",
-      pincode: "04322",
+      "id": "61bf1558-94c3-4494-a522-0aad46ed5334",
+      "fullname": "Cristiano Ronaldo",
+      "mobile": "+351 912 345 678",
+      "flat": "Villa CR7, Avenue of the Stars",
+      "area": "Funchal",
+      "city": "Madeira",
+      "pincode": "9000-000",
+      "country": "Portugal"
     },
   ],
 };

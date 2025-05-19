@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/eyesome-react/static/css/main.3f39896f.css",
-    "main.js": "/eyesome-react/static/js/main.e011efe3.js",
+    "main.js": "/eyesome-react/static/js/main.9b473264.js",
     "static/media/sportsmod1.jpg": "/eyesome-react/static/media/sportsmod1.79195fd1fb60315f1319.jpg",
     "static/media/visionmod1.jpg": "/eyesome-react/static/media/visionmod1.88377288a7084c28c6b4.jpg",
     "static/media/sunmod1.jpg": "/eyesome-react/static/media/sunmod1.94aaa655aab1fdc25a96.jpg",
@@ -44,10 +44,10 @@
     "static/media/spinning-circles.svg": "/eyesome-react/static/media/spinning-circles.4beb16fefd30580869ff5d7feb7a52ce.svg",
     "index.html": "/eyesome-react/index.html",
     "main.3f39896f.css.map": "/eyesome-react/static/css/main.3f39896f.css.map",
-    "main.e011efe3.js.map": "/eyesome-react/static/js/main.e011efe3.js.map"
+    "main.9b473264.js.map": "/eyesome-react/static/js/main.9b473264.js.map"
   },
   "entrypoints": [
     "static/css/main.3f39896f.css",
-    "static/js/main.e011efe3.js"
+    "static/js/main.9b473264.js"
   ]
 }
