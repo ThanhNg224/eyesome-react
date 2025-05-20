@@ -20,6 +20,7 @@ const CategoryCard = ({
       <img
         src={categoryImg}
         alt={categoryName}
+        loading ="lazy"
         className="rounded-xl h-full w-full object-cover transition-all delay-75 ease-out"
       />
       <div
@@ -27,9 +28,9 @@ const CategoryCard = ({
              flex flex-col w-full h-full justify-center items-center
             transition-all delay-75 absolute left-0 right-0 bottom-0 top-0 bg-black/[0.3] rounded-xl"
       >
-        <h1 className="text-4xl xs:text-6xl sm:text-8xl lg:text-6xl font-extrabold capitalize text-[--theme-color] shadow-sm p-3 break-all">
-          {categoryName}
-        </h1>
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-center text-[--theme-color] shadow-sm px-4 break-words">
+  {categoryName}
+</h1>
       </div>
     </section>
   );

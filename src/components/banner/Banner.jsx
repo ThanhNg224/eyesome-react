@@ -7,12 +7,12 @@ const Banner = ({ catRef }) => {
   const navigate = useNavigate();
 
   return (
-    <main className=" flex justify-between items-center py-1 mb-5  relative">
-      <section className="max-w-xl mx-auto sm:mx-0  w-full py-2  lg:w-1/3">
-        <h1 className="text-6xl  sm:text-7xl lg:text-8xl font-semibold  py-3 w-full ">
+    <main className="flex justify-between items-center py-1 mb-5 relative">
+      <section className="max-w-2xl mx-auto sm:mx-0 w-full py-2 lg:w-2/5">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold py-3 w-full leading-tight">
           Kính Mắt & Tròng Kính
         </h1>
-        <p className="py-3 text-md  text-gray-600">
+        <p className="py-3 text-md text-gray-600">
           Mua kính mắt chất lượng cao tốt nhất từ chúng tôi.
           <br />
           Hơn 100 loại kính đa dạng.
