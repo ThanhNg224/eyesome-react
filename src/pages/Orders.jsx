@@ -1,19 +1,28 @@
 import React, { useEffect } from "react";
 import orderSuccess from "../assets/success-order.gif";
 import { useLocation, useNavigate } from "react-router";
+import { useCartContext } from "../contexts";
+
 
 const Orders = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  useEffect(() => {
-    if (location?.state !== "orderSuccess") {
-      navigate("/");
-    } else {
-      setTimeout(() => {
-        navigate("/products");
-      }, 3000);
-    }
-  }, []);
+  const { clearCart } = useCartContext();
+
+useEffect(() => {
+  const query = new URLSearchParams(location.search);
+  const vnpTxn = query.get("vnp_TxnRef");
+
+  if (vnpTxn) {
+    clearCart(); // optional
+    setTimeout(() => {
+      navigate("/products");
+    }, 3000);
+  } else if (location?.state !== "orderSuccess") {
+    navigate("/");
+  }
+}, []);
+
   return (
     <div className="min-h-[80vh] flex justify-center items-center py-3 ">
       <div className="bg-white h-1/2 w-96 m-auto  rounded-md flex flex-col items-center justify-center p-5 modalShadow">

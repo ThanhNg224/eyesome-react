@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client"; // 👈 dùng createRoot thay vì ReactDOM.render
 import { HashRouter as Router } from "react-router-dom";
 import "./index.css";
-
+import "miragejs";
 import App from "./App";
 import { makeServer } from "./server";
 import {
@@ -13,7 +13,9 @@ import {
 } from "./contexts";
 
 // Call make Server
-makeServer();
+makeServer({ environment: "production" });
+
+
 
 const container = document.getElementById("root");
 const root = createRoot(container); 

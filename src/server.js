@@ -85,6 +85,9 @@ export function makeServer({ environment = "development" } = {}) {
         "/user/wishlist/:productId",
         removeItemFromWishlistHandler.bind(this)
       );
+      this.passthrough("http://localhost:3001/**");
+      this.passthrough("https://eyesome-backend.onrender.com/**");
+
     },
   });
 }

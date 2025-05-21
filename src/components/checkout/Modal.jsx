@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { AiOutlineClose } from "react-icons/ai";
 import spinningLoader from "../../assets/spinning-circles.svg";
 import OrderSummary from "./OrderSummary";
@@ -13,65 +12,30 @@ const Modal = ({ showModal, setShowModal }) => {
   const [disableBtn, setDisableBtn] = useState(false);
   const navigate = useNavigate();
 
+const displayVnpay = async () => {
+  try {
+    const res = await fetch("https://eyesome-backend.onrender.com/api/create-vnpay-url", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount: totalPriceOfCartProducts }),
+    });
+
+    const data = await res.json();
+    console.log("✅ VNPay response:", data); // <-- Add this
+    window.location.href = data.paymentUrl;
+  } catch (err) {
+    console.error("❌ VNPAY redirect failed:", err);
+    setDisableBtn(false);
+    alert("Thanh toán thất bại. Vui lòng thử lại sau.");
+  }
+};
+
   const clickHandler = () => {
     setDisableBtn(true);
     setTimeout(() => {
       setShowModal(false);
-      setDisableBtn(false);
-      displayRazorpay();
+      displayVnpay();
     }, 1000);
-  };
-  const loadScript = async (url) => {
-    return new Promise((resolve) => {
-      const script = document.createElement("script");
-      script.src = url;
-
-      script.onload = () => {
-        resolve(true);
-      };
-
-      script.onerror = () => {
-        resolve(false);
-      };
-
-      document.body.appendChild(script);
-    });
-  };
-
-  const displayRazorpay = async () => {
-    const res = await loadScript(
-      "https://checkout.razorpay.com/v1/checkout.js"
-    );
-
-    if (!res) {
-      console.log("Razorpay SDK failed to load, check you connection", "error");
-      return;
-    }
-
-    const options = {
-      key: "rzp_test_H2lv7MTHG3JATn",
-      amount: totalPriceOfCartProducts * 100,
-      currency: "VND",
-      name: "Eyesome",
-      description: "Be awesome with eyesome :)",
-      image: appLogo,
-      handler: function () {
-        clearCart();
-        navigate("/orders", {
-          state: "orderSuccess",
-        });
-      },
-      prefill: {
-        name: userInfo ? userInfo.username : "Test",
-        email: userInfo ? userInfo.email : "abc@gmail.com",
-        contact: "9833445762",
-      },
-      theme: {
-        color: "#f9ca24",
-      },
-    };
-    const paymentObject = new window.Razorpay(options);
-    paymentObject.open();
   };
 
   return (
@@ -93,8 +57,7 @@ const Modal = ({ showModal, setShowModal }) => {
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
                     disabled={disableBtn}
-                    className="btn-rounded-primary w-1/2  text-sm ease-linear transition-all duration-150 h-10 flex justify-center items-center
-                    disabled:cursor-wait"
+                    className="btn-rounded-primary w-1/2 text-sm ease-linear transition-all duration-150 h-10 flex justify-center items-center disabled:cursor-wait"
                     type="button"
                     onClick={clickHandler}
                   >
