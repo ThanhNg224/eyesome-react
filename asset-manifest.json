@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/eyesome-react/static/css/main.55a95cf4.css",
-    "main.js": "/eyesome-react/static/js/main.0982ee72.js",
+    "main.css": "/eyesome-react/static/css/main.233d5953.css",
+    "main.js": "/eyesome-react/static/js/main.e9e050d4.js",
     "static/media/sportsmod1.jpg": "/eyesome-react/static/media/sportsmod1.0f26b93c34df18345b97.jpg",
     "static/media/visionmod1.jpg": "/eyesome-react/static/media/visionmod1.496c170728a2dc458ea5.jpg",
     "static/media/sunmod1.jpg": "/eyesome-react/static/media/sunmod1.da9cb77f7c82c5f2d242.jpg",
@@ -43,11 +43,11 @@
     "static/media/loaderBlack.svg": "/eyesome-react/static/media/loaderBlack.3f75985009684d059bae0d73b1042027.svg",
     "static/media/spinning-circles.svg": "/eyesome-react/static/media/spinning-circles.4beb16fefd30580869ff5d7feb7a52ce.svg",
     "index.html": "/eyesome-react/index.html",
-    "main.55a95cf4.css.map": "/eyesome-react/static/css/main.55a95cf4.css.map",
-    "main.0982ee72.js.map": "/eyesome-react/static/js/main.0982ee72.js.map"
+    "main.233d5953.css.map": "/eyesome-react/static/css/main.233d5953.css.map",
+    "main.e9e050d4.js.map": "/eyesome-react/static/js/main.e9e050d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.55a95cf4.css",
-    "static/js/main.0982ee72.js"
+    "static/css/main.233d5953.css",
+    "static/js/main.e9e050d4.js"
   ]
 }
