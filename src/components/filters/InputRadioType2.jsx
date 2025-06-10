@@ -19,7 +19,7 @@ const InputRadioType2 = ({ data }) => {
         name="gender"
         value={data}
         className="invisible"
-        selected={gender === data}
+        checked={gender === data}
         onChange={(e) => applyFilters(e.target.name, e.target.value)}
       />
     </label>
